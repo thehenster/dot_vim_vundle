@@ -1,7 +1,7 @@
 base=${PWD}
 
-mv -f ~/.vimrc /tmp/;
+rm -f ~/.vimrc;
 ln -s $base/.vimrc ~/.vimrc;
 
-mv -f ~/.vim /tmp/.vim;
+rm -f ~/.vim;
 ln -s $base/.vim ~/.vim;
