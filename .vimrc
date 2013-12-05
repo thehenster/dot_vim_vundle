@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 Bundle 'https://github.com/kien/ctrlp.vim'
 Bundle 'https://github.com/scrooloose/nerdtree.git'
 Bundle 'https://github.com/altercation/vim-colors-solarized.git'
+Bundle 'bling/vim-airline'
 
 "" Line numbers in the gutter
 :set number
@@ -31,14 +32,14 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-" Maps for window navigation
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
+" Buffer navigation
+map ;n :bn<cr>
+map ;p :bp<cr>
+map ;d :bd<cr> 
 
 " Maps for NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
-
+" Airline configs
+let g:airline#extensions#tabline#enabled = 1
 
